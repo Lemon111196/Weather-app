@@ -14,6 +14,8 @@ function Navbar() {
             case "/weather":
             setNavTitlte("Weather");
             break
+            case "/":
+            setNavTitlte("Homepage");
         }
     }
   return (

@@ -1,14 +1,15 @@
 import Homepage from "../pages/Homepage";
-import Weather from "../pages/Weather";
+
 
 const routes = [
     {
         path: '/',
-        elements: <Homepage/>
+        element: <Homepage/>
     },
     {
-        path: '/weather',
-        elements: <Weather/>
-    }
+        path: '/homepage',
+        element: <Homepage/>
+    },
+
 ];
 export default routes
