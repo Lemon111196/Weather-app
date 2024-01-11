@@ -5,7 +5,7 @@ export const CurrentLocationContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 100%;
     img{
         width: 230px;
         height: 230px;
@@ -14,5 +14,5 @@ export const CurrentLocationContainer = styled.div`
         display:flex;
         justify-content: center;
     }
-    
+    p{display: flex; justify-content: center}
 `;

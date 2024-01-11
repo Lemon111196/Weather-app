@@ -1,8 +1,13 @@
 import styled from "styled-components";
 
 export const HomepageContainer = styled.div`
-    .body{
+position: relative;
+    .header{
         display: flex;
-        justify-content: center;
+    }
+    .body{
+        position: absolute;
+        top: 200px;
+        left: 50vw;
     }
 `;
