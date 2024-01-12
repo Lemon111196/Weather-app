@@ -13,6 +13,20 @@ export const CurrentLocationContainer = styled.div`
     h2{
         display:flex;
         justify-content: center;
+        font-weight: 700px;
+        font-size: 20;
+        margin: 20px;
     }
-    p{display: flex; justify-content: center}
+    p{
+        display: flex; 
+        justify-content: center;
+        margin: 20px;
+        
+    }
+    #demo-simple-select{
+        width: 300px;
+    }
+    .temper-text{
+        margin-top: 30px
+    }
 `;

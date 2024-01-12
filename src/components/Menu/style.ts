@@ -46,7 +46,7 @@ export const MenuContainer = styled.div`
     .homeIcon{
         color: #CD853F
     }
-    .thermostatIcon{
-       color: #FF0033;	
+    .magicIcon{
+       color: #CC66FF;	
     }
 `;

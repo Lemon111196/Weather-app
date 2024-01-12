@@ -11,8 +11,8 @@ function Navbar() {
     }, [pathname]);
     const getNavName = () => {
         switch(pathname){
-            case "/weather":
-            setNavTitlte("Weather");
+            case "/tarot":
+            setNavTitlte("Fortune");
             break
             case "/":
             setNavTitlte("Homepage");
