@@ -3,6 +3,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import avatarWeather from '../../assets/img/good-weather.jpg'
 import { useNavigate } from "react-router-dom";
+import CheckBoxIcon from '@mui/icons-material/CheckBox';
 export default function Menu() {
   const navigate = useNavigate();
   return (
@@ -18,9 +19,15 @@ export default function Menu() {
           <p>Homepage</p>
         </div>
         <div className="weather" onClick={() => navigate('/tarot')}>
-          <div className="weather">
+          <div className="tarot">
             <AutoAwesomeIcon className="magicIcon"/>
             <p>Tarot</p>
+          </div>
+        </div>
+        <div onClick={() => navigate ('/todo')}>
+          <div className="todo">
+            <CheckBoxIcon className="todoIcon"/>
+            <p>Todo list</p>
           </div>
         </div>
       </div>

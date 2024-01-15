@@ -14,8 +14,11 @@ function Navbar() {
             case "/tarot":
             setNavTitlte("Fortune");
             break
-            case "/":
+            case "/homepage":
             setNavTitlte("Homepage");
+            break
+            case "/todo":
+            setNavTitlte("Todo list");
         }
     }
   return (

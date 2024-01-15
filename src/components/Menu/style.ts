@@ -20,33 +20,46 @@ export const MenuContainer = styled.div`
         align-items: center;
         flex-direction: column;
     }
+    .navbar{ 
+        margin-top: 50px;
+    }
     .homepage{
         cursor: pointer;
-        transition: margin-left 0.5s;
-        margin-top: 10px;
-        font-size: 18px;
-        display: flex;
-    }
-    .weather{
-        cursor: pointer;
-        margin-top: 20px;
-        font-size: 18px;
-        display: flex;
         transition: margin-left 1s;
+        margin-top: 30px;
+        font-size: 18px;
+        display: flex;
     }
     .homepage:hover{
-        margin-left: 2%;
-    }
-    .navbar{
-        margin-top: 20px;
-    }
-    .weather:hover{
-        margin-left: 10px;
+        margin-left: 12px;
     }
     .homeIcon{
-        color: #CD853F
+        color: #CC6633;
+    }
+    .tarot{
+        cursor: pointer;
+        transition: margin-left 1s;
+        margin-top: 30px;
+        font-size: 18px;
+        display: flex;
+    }
+    .tarot:hover{
+        margin-left: 12px;;
     }
     .magicIcon{
-       color: #CC66FF;	
+        color: #9966CC;
+    }
+    .todo{
+        cursor: pointer;
+        transition: margin-left 1s;
+        margin-top: 30px;
+        font-size: 18px;
+        display: flex;
+    }
+    .todo:hover{
+        margin-left: 12px;
+    }
+    .todoIcon{
+        color:#006699;
     }
 `;

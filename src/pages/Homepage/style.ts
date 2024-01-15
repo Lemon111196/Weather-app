@@ -2,12 +2,9 @@ import styled from "styled-components";
 
 export const HomepageContainer = styled.div`
 position: relative;
-    .header{
-        display: flex;
-    }
-    .body{
+    .crr{
         position: absolute;
+        left: 600px;
         top: 200px;
-        left: 50vw;
     }
 `;

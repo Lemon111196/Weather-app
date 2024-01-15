@@ -7,13 +7,13 @@ import { TarotContainer } from "./style";
 export default function Tarot() {
   return (
     <TarotContainer>
-        <Shuffle></Shuffle>
       <div className="setUpComponent">
         <Menu></Menu>
         <Navbar></Navbar>
       </div>
       <div className="body">
         <div className="tarto">
+        <Shuffle></Shuffle>
         </div>
       </div>
     </TarotContainer>
