@@ -1,0 +1,14 @@
+{
+    "user":[
+        {
+            "id": "admin",
+            "name": "alo",
+            "password": "admin",
+            "email": "admin@gmail.com",
+            "phone": "",
+            "country": "VN",
+            "address": "",
+            "gender": "male"
+        }
+    ]
+}

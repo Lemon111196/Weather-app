@@ -11,6 +11,7 @@ export const ShuffleContainer = styled.div`
    .click{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: auto;
+    align-items: center;
    }
 `;

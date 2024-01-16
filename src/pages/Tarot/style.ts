@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export const TarotContainer = styled.div`
-    .setUpComponent{
-        display: flex;
+position: relative;
+    .tarto{
+        position: absolute;
+        left: 500px;
+        top: 200px;
     }
 
 `;

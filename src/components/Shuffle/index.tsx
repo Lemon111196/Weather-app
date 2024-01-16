@@ -43,7 +43,6 @@ export default function Shuffle() {
             <img key={index} src={image} alt={`Random ${index + 1}`} />
           ))}
           <div className="click">
-            <p>abc</p>
             <Button variant="contained" onClick={handleShuffle}>Good luck!</Button>
           </div>
         </div>

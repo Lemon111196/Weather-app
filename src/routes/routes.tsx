@@ -1,8 +1,10 @@
+import AuthLayout from "../Layouts/AuthLayout";
 import MainLayout from "../Layouts/MainLayout";
 import Homepage from "../pages/Homepage";
 import Tarot from "../pages/Tarot";
 import Todo from "../pages/Todo";
-
+import Login from "../pages/auth/Login";
+import Register from "../pages/auth/Register";
 
 const routes = [
     {
@@ -23,7 +25,10 @@ const routes = [
             }
         ]
     },
-
+    {
+        path: '/auth',
+        element: <Login/>,
+    },
 
 
 ];
