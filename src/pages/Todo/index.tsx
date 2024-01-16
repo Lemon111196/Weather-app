@@ -5,6 +5,7 @@ import { IProp } from "./interface";
 import ModeEditOutlineIcon from '@mui/icons-material/ModeEditOutline';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import Dialog from "../../components/Dialog";
+import { toast } from "react-toastify";
 export default function Todo() {
   const id = useId()
   const [formData, setFormData] = useState<IProp>({
@@ -32,6 +33,7 @@ export default function Todo() {
     }
   }
   const createTodo = () => {
+
     setFormData({
       id,
       todo: "",
@@ -82,6 +84,7 @@ export default function Todo() {
     setTodo(updateData);
     closeUpdateDialog();
   }
+  const notify = () => toast.success('Success')
   //! Open modal
   const [updateModal, setUpdateModal] = useState<boolean>(false);
   const showModal = (id: string | number) => {

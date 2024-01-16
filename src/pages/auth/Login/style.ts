@@ -1,56 +1,45 @@
 import styled from "styled-components"
-export const LoginCointainer = styled.div`
+export const LoginContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    .login-form{
-        /* display: block; */
-        /* flex-direction: column; */
-        max-width: 350px;
+    /* border: 1px solid black; */
+    background: url('../../../assets/img/anh-nen-thien-nhien-4k_024350402.jpg') no-repeat;
+    .card{
+        padding: 10px;
+    }
+    .form-container{
+        max-width: 400px;
         border: 1px solid rgba(128, 128, 128, 0.3);
         padding: 20px;
         position: absolute;
         top: 270px;
-
-        }
-    .login-btn{
-        width: 300px;
-        padding: .2rem;
-        font-weight: 700;
-        background-color: rgb(1,183, 255);
-        border: none;
-        color: white;
-        margin-top: 12px;
-        border-radius: 8px;
+        left: 550px;
     }
-    .login-form input{
-        padding: .5rem;
-        border-radius: 5px;
-        border: 1px solid rgba(128, 128, 128, 0.3);
-        width: 300px;
+    .input{
+        margin-top: 10px;
+        width: 340px
     }
-    .login-form h2{
-        margin-bottom: 10px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 800;
-    }
-    .register-box{
-        display: flex;
-        border: 1px solid rgba(128, 128, 128, 0.3);
-        width: 350px ;
-        padding: 20px;
+    .form-group{
         margin-top: 20px;
-        position: absolute;
-        top: 500px;
+        margin-bottom: 20px;
     }
-    .register{
-        font-weight: 700;
-        color: #0087ff
+    .card-footer{
+        display: flex;
+        flex-direction: column;
     }
-    .register-box p{
-        margin-left: 10px;
+    .btn{
+        width: 340px;
     }
-    
-`
+.register-box{
+    display:flex;
+    justify-content: center;
+}
+.circular{
+    display: flex;
+    align-items: center;
+    border: none
+}
+`;

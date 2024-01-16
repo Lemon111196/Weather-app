@@ -15,35 +15,29 @@ export default function Login() {
     sessionStorage.clear();
   }, []);
 
-  const ProceedLogin = async (e: React.FormEvent) => {
+  const ProceedLogin = (e: React.FormEvent) => {
     e.preventDefault();
     if (validate()) {
       setLoading(true);
-
-      try {
-        const res = await fetch(`http://localhost:5174/${username}`);
-        const resp = await res.json();
-
+      fetch("http://localhost:5174/" + username).then(res => {
+        return res.json();
+      }).then((resp) => {
+        console.log(resp);
         if (Object.keys(resp).length === 0) {
-          toast.error('Please Enter valid username');
+          toast.error("Please Enter valid username");
         } else {
           if (resp.password === password) {
-            toast.success('Success');
+            toast.success('Success')
             sessionStorage.setItem('username', username);
             sessionStorage.setItem('userrole', resp.role);
-            // Proceed to the next step or navigate after a delay
-            setTimeout(() => {
-              navigate('/');
-            }, 2000); // Adjust the delay as needed
+            navigate('/')
           } else {
             toast.error('Please enter valid credentials');
           }
         }
-      } catch (err) {
-        toast.error('Login Failed');
-      } finally {
-        setLoading(false);
-      }
+      }).catch((err) => {
+        toast.error('Login Failed due to:' + err.message);
+      })
     }
   }
 
@@ -90,12 +84,12 @@ export default function Login() {
               </div>
             </div>
             <div className="card-footer">
-              <Button className="btn"
-                variant="outlined"
-                disabled={loading}
-                onClick={ProceedLogin}
+              <Button className="btn" 
+              variant="outlined" 
+              disabled={loading}
+              onClick={ProceedLogin}
               >
-                {loading ? <CircularProgress size={20} /> : 'Sign in'}
+              {loading ? <CircularProgress size={20} /> : 'Sign in'}
               </Button>
               <div className="register-box">
                 <p>Don't you have any account?</p>
